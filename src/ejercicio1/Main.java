@@ -4,7 +4,7 @@ public class Main {
 
     private static final String NOMBRE_FICH_CONTENEDOR_MENSAJE_DESENCRIPTADO =
             "MensajeDesencriptado";
-    private static final String ALGORITMO = "DESede";
+    //private static final String ALGORITMO = "DESede";
     private static AccessFileClaveSimetricas accessFile = new AccessFileClaveSimetricas();
 
     public static void main(String[] args) {
@@ -12,12 +12,13 @@ public class Main {
 
         String nombreFichConMensajeEnCriptado=menus.Vista.introNombreFicheroEncriptado();
         String nombreFichConClavePrivada = menus.Vista.introNombreFicheroConClavePrivada();
+        String algoritmo = menus.Vista.elegirOpcionAlgoritmo();
 
         accessFile.desencriptarArchivo
                 (nombreFichConMensajeEnCriptado,
                         NOMBRE_FICH_CONTENEDOR_MENSAJE_DESENCRIPTADO,
                         nombreFichConClavePrivada,
-                        ALGORITMO
+                        algoritmo
                 );
     }
 }

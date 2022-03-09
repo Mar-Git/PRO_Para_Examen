@@ -17,8 +17,6 @@ public class Vista {
             "Introduzca el nombre del fichero que contendrá la clave privada";
     private static final String INTRO_NOMBRE_FICH_GUARDAR_CLAVE_PUBLICA =
             "Introduzca el nombre del fichero que contendrá la clave publica";
-    private static final String INTRO_NOMBRE_ALGORITMO =
-            "Introduzca el nombre del algoritmo para generar su clave privada";
 
     public static String introNombreFicheroEncriptado(){
         String nombreFichero;
